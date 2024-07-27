@@ -1,7 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using QLBH_DataAccess;
+using QLBH_DataAccess.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<QLBH_ONLINEContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnStr"));
+});
 
 // Add services to the container.
 
