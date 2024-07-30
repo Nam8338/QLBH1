@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QLBH_DataAccess\QLBH_DataAccess.csproj" />
+    <ProjectReference Include="..\QLBH_Services\QLBH_Services.csproj" />
   </ItemGroup>
 
 </Project>

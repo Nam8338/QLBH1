@@ -13,7 +13,7 @@ namespace QLBH_Services.GenericRepository
         List<T> GetAll();
         void Add(T entity);
         void Update(T entity);
-        void Delete(T entity);
+        void Remove(T entity);
         List<T> Search(Expression<Func<T, bool>> predicate);
     }
 }
