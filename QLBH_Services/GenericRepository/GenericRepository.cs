@@ -23,7 +23,7 @@ namespace QLBH_Services.GenericRepository
             _context.Set<T>().Add(entity);
         }
 
-        public void Delete(T entity)
+        public void Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
         }
